@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Самые известные картины за всю историю человечества</title>
+</head>
+<body>
+    <div id="table-page">
+        <header>
+            <h1>Таблица известных картин</h1>
+            <nav>
+                <ul>
+                    <li><a href="main-page.html">Главная</a></li>
+                    <li><a href="detailed-page.html">Подробное описание</a></li>
+                    <li><a href="table-page.html">Таблица данных</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>График</h2>
+                <form>
+                    <b>Значение по оси ОХ</b><br>
+                    <input type="radio" name="ox" id="ox" value="type"> Тип<br>
+                    <input type="radio" name="ox" id="ox" value="country"> Страна<br>
+                    <input type="radio" name="ox" id="ox" value="year"> Год<br>
+                    
+                    <b>Значение по оси ОУ</b><br>
+                    <input type="radio" name="oy" id="oy" value="max_height"> Максимальная стоимость<br>
+                    <input type="radio" name="oy" id="oy" value="min_height"> Средняя стоимость<br>
+                    <input type="radio" name="oy" id="oy" Svalue="count"> Минимальная стоимость<br>
+                    
+                    <input type="button" value="Повторить">
+                </form>
+                <p>Здесь будет график</p>
+            </section>
+
+            <section>
+                <h2>Фильтр</h2>
+                <form>
+                    Название: <input type="text" name="name" id="name"><br>
+                    Тип: <input type="text" name="type" id="type"><br>
+                    Художник: <input type="text" name="artist" id="artist"><br>
+                    Страна: <input type="text" name="country" id="country"><br>
+                    Город: <input type="text" name="city" id="city"><br>
+                    Год: от <input type="number" name="year_from" id="year_from"> до <input type="number" name="year_to"><br>
+                    Стоимость: от <input type="number" name="price_from" id="price_from"> до <input type="number" name="price_to"><br>
+                    <input type="button" value="Найти">
+                </form>
+            </section>
+
+            <section>
+                <h2>Сортировка</h2>
+                <form>
+                    Первый уровень: 
+                    <select name="sort1" id="sort1">
+                        <option value="none">нет</option>
+                        <option value="name">Название</option>
+                        <option value="type">Тип</option>
+                        <option value="artist">Худождник</option>
+                        <option value="country">Страна</option>
+                        <option value="city">Город</option>
+                        <option value="year">Год</option>
+                        <option value="price">Стоимость</option>
+                    </select>
+                    по убыванию? <input type="checkbox" name="desc1"><br>
+                    
+                    Второй уровень: 
+                    <select name="sort2" id="sort2">
+                        <option value="none">нет</option>
+                        <option value="name">Название</option>
+                        <option value="type">Тип</option>
+                        <option value="artist">Худождник</option>
+                        <option value="country">Страна</option>
+                        <option value="city">Город</option>
+                        <option value="year">Год</option>
+                        <option value="price">Стоимость</option>
+                    </select>
+                    по убыванию? <input type="checkbox" name="desc2"><br>
+                    
+                    Третий уровень: 
+                    <select name="sort3" id="sort3">
+                        <option value="none">нет</option>
+                        <option value="name">Название</option>
+                        <option value="type">Тип</option>
+                        <option value="artist">Худождник</option>
+                        <option value="country">Страна</option>
+                        <option value="city">Город</option>
+                        <option value="year">Год</option>
+                        <option value="price">Стоимость</option>
+                    </select>
+                    по убыванию? <input type="checkbox" name="desc3"><br>
+                    <input type="button" value="Сортировать">
+                </form>
+            </section>
+
+            <section>
+                <h2>Таблица известных картин</h2>
+                <table border="1" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Сортировать</th>
+                            <th>Название</th>
+                            <th>Тип</th>
+                            <th>Художник</th>
+                            <th>Страна</th>
+                            <th>Город</th>
+                            <th>Год</th>
+                            <th>Стоимость, млн $</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Мона Лиза</td>
+                            <td>Портрет</td>
+                            <td>Леонардо да Винчи</td>
+                            <td>Италия</td>
+                            <td>Флоренция</td>
+                            <td>1506</td>
+                            <td>870</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Звездная ночь</td>
+                            <td>Пейзаж</td>
+                            <td>Винсент Ван Гог</td>
+                            <td>Нидерланды</td>
+                            <td>Сен-Реми</td>
+                            <td>1889</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Тайная вечеря</td>
+                            <td>Религиозная</td>
+                            <td>Леонардо да Винчи</td>
+                            <td>Италия</td>
+                            <td>Милан</td>
+                            <td>1498</td>
+                            <td>450</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Крик</td>
+                            <td>Экспрессионизм</td>
+                            <td>Эдвард Мунк</td>
+                            <td>Норвегия</td>
+                            <td>Осло</td>
+                            <td>1893</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Герника</td>
+                            <td>Кубизм</td>
+                            <td>Пабло Пикассо</td>
+                            <td>Испания</td>
+                            <td>Мадрид</td>
+                            <td>1937</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Постоянство памяти</td>
+                            <td>Сюрреализм</td>
+                            <td>Сальвадор Дали</td>
+                            <td>Испания</td>
+                            <td>Фигерас</td>
+                            <td>1931</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Рождение Венеры</td>
+                            <td>Мифологическая</td>
+                            <td>Сандро Боттичелли</td>
+                            <td>Италия</td>
+                            <td>Флоренция</td>
+                            <td>1485</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Афинская школа</td>
+                            <td>Фреска</td>
+                            <td>Рафаэль Санти</td>
+                            <td>Италия</td>
+                            <td>Рим</td>
+                            <td>1511</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Ночной дозор</td>
+                            <td>Групповой портрет</td>
+                            <td>Рембрандт ван Рейн</td>
+                            <td>Нидерланды</td>
+                            <td>Амстердам</td>
+                            <td>1642</td>
+                            <td>180</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Девятый вал</td>
+                            <td>Марина</td>
+                            <td>Иван Айвазовский</td>
+                            <td>Россия</td>
+                            <td>Санкт-Петербург</td>
+                            <td>1850</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Подсолнухи</td>
+                            <td>Натюрморт</td>
+                            <td>Винсент Ван Гог</td>
+                            <td>Нидерланды</td>
+                            <td>Арль</td>
+                            <td>1888</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Черный квадрат</td>
+                            <td>Абстракционизм</td>
+                            <td>Казимир Малевич</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1915</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Девочка с персиками</td>
+                            <td>Портрет</td>
+                            <td>Валентин Серов</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1887</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Американская готика</td>
+                            <td>Портрет</td>
+                            <td>Грант Вуд</td>
+                            <td>США</td>
+                            <td>Чикаго</td>
+                            <td>1930</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Поцелуй</td>
+                            <td>Символизм</td>
+                            <td>Густав Климт</td>
+                            <td>Австрия</td>
+                            <td>Вена</td>
+                            <td>1908</td>
+                            <td>135</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Сад земных наслаждений</td>
+                            <td>Триптих</td>
+                            <td>Иероним Босх</td>
+                            <td>Нидерланды</td>
+                            <td>Мадрид</td>
+                            <td>1510</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Впечатление. Восходящее солнце</td>
+                            <td>Импрессионизм</td>
+                            <td>Клод Моне</td>
+                            <td>Франция</td>
+                            <td>Париж</td>
+                            <td>1872</td>
+                            <td>110</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Кувшинки</td>
+                            <td>Пейзаж</td>
+                            <td>Клод Моне</td>
+                            <td>Франция</td>
+                            <td>Живерни</td>
+                            <td>1915</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Завтрак на траве</td>
+                            <td>Жанровая сцена</td>
+                            <td>Эдуард Мане</td>
+                            <td>Франция</td>
+                            <td>Париж</td>
+                            <td>1863</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Олимпия</td>
+                            <td>Портрет</td>
+                            <td>Эдуард Мане</td>
+                            <td>Франция</td>
+                            <td>Париж</td>
+                            <td>1863</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Бал в Мулен де ла Галетт</td>
+                            <td>Жанровая сцена</td>
+                            <td>Пьер-Огюст Ренуар</td>
+                            <td>Франция</td>
+                            <td>Париж</td>
+                            <td>1876</td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Танец</td>
+                            <td>Аллегория</td>
+                            <td>Анри Матисс</td>
+                            <td>Франция</td>
+                            <td>Париж</td>
+                            <td>1910</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Автопортрет с отрезанным ухом</td>
+                            <td>Автопортрет</td>
+                            <td>Винсент Ван Гог</td>
+                            <td>Нидерланды</td>
+                            <td>Арль</td>
+                            <td>1889</td>
+                            <td>72</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Девушка с жемчужной сережкой</td>
+                            <td>Портрет</td>
+                            <td>Ян Вермеер</td>
+                            <td>Нидерланды</td>
+                            <td>Делфт</td>
+                            <td>1665</td>
+                            <td>180</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Менины</td>
+                            <td>Групповой портрет</td>
+                            <td>Диего Веласкес</td>
+                            <td>Испания</td>
+                            <td>Мадрид</td>
+                            <td>1656</td>
+                            <td>220</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Авиньонские девицы</td>
+                            <td>Кубизм</td>
+                            <td>Пабло Пикассо</td>
+                            <td>Испания</td>
+                            <td>Париж</td>
+                            <td>1907</td>
+                            <td>158</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Голубые танцовщицы</td>
+                            <td>Балетная сцена</td>
+                            <td>Эдгар Дега</td>
+                            <td>Франция</td>
+                            <td>Париж</td>
+                            <td>1897</td>
+                            <td>68</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Апофеоз войны</td>
+                            <td>Батальная</td>
+                            <td>Василий Верещагин</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1871</td>
+                            <td>42</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Богатыри</td>
+                            <td>Историческая</td>
+                            <td>Виктор Васнецов</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1898</td>
+                            <td>38</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Утро в сосновом лесу</td>
+                            <td>Пейзаж</td>
+                            <td>Иван Шишкин</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1889</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Неравный брак</td>
+                            <td>Жанровая сцена</td>
+                            <td>Василий Пукирев</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1862</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Явление Христа народу</td>
+                            <td>Религиозная</td>
+                            <td>Александр Иванов</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1857</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Купание красного коня</td>
+                            <td>Символизм</td>
+                            <td>Кузьма Петров-Водкин</td>
+                            <td>Россия</td>
+                            <td>Санкт-Петербург</td>
+                            <td>1912</td>
+                            <td>48</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Незнакомка</td>
+                            <td>Портрет</td>
+                            <td>Иван Крамской</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1883</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Бурлаки на Волге</td>
+                            <td>Жанровая сцена</td>
+                            <td>Илья Репин</td>
+                            <td>Россия</td>
+                            <td>Санкт-Петербург</td>
+                            <td>1873</td>
+                            <td>58</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Запорожцы пишут письмо турецкому султану</td>
+                            <td>Историческая</td>
+                            <td>Илья Репин</td>
+                            <td>Россия</td>
+                            <td>Санкт-Петербург</td>
+                            <td>1891</td>
+                            <td>62</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Демон сидящий</td>
+                            <td>Символизм</td>
+                            <td>Михаил Врубель</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1890</td>
+                            <td>44</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Над вечным покоем</td>
+                            <td>Пейзаж</td>
+                            <td>Исаак Левитан</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1894</td>
+                            <td>36</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Московский дворик</td>
+                            <td>Городской пейзаж</td>
+                            <td>Василий Поленов</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1878</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Всадница</td>
+                            <td>Портрет</td>
+                            <td>Карл Брюллов</td>
+                            <td>Россия</td>
+                            <td>Санкт-Петербург</td>
+                            <td>1832</td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Последний день Помпеи</td>
+                            <td>Историческая</td>
+                            <td>Карл Брюллов</td>
+                            <td>Россия</td>
+                            <td>Санкт-Петербург</td>
+                            <td>1833</td>
+                            <td>68</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Не ждали</td>
+                            <td>Жанровая сцена</td>
+                            <td>Илья Репин</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1888</td>
+                            <td>51</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Троица</td>
+                            <td>Икона</td>
+                            <td>Андрей Рублев</td>
+                            <td>Россия</td>
+                            <td>Москва</td>
+                            <td>1425</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Венера Урбинская</td>
+                            <td>Мифологическая</td>
+                            <td>Тициан</td>
+                            <td>Италия</td>
+                            <td>Флоренция</td>
+                            <td>1538</td>
+                            <td>280</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Сикстинская Мадонна</td>
+                            <td>Религиозная</td>
+                            <td>Рафаэль Санти</td>
+                            <td>Италия</td>
+                            <td>Дрезден</td>
+                            <td>1513</td>
+                            <td>320</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Сотворение Адама</td>
+                            <td>Фреска</td>
+                            <td>Микеланджело</td>
+                            <td>Италия</td>
+                            <td>Рим</td>
+                            <td>1512</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Охотники на снегу</td>
+                            <td>Пейзаж</td>
+                            <td>Питер Брейгель Старший</td>
+                            <td>Нидерланды</td>
+                            <td>Вена</td>
+                            <td>1565</td>
+                            <td>190</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Вавилонская башня</td>
+                            <td>Религиозная</td>
+                            <td>Питер Брейгель Старший</td>
+                            <td>Нидерланды</td>
+                            <td>Вена</td>
+                            <td>1563</td>
+                            <td>175</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Молочница</td>
+                            <td>Жанровая сцена</td>
+                            <td>Ян Вермеер</td>
+                            <td>Нидерланды</td>
+                            <td>Амстердам</td>
+                            <td>1660</td>
+                            <td>165</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Аллегория живописи</td>
+                            <td>Аллегория</td>
+                            <td>Ян Вермеер</td>
+                            <td>Нидерланды</td>
+                            <td>Вена</td>
+                            <td>1666</td>
+                            <td>155</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p>Группа: Б9123-09.03.04 | Разработчик: Бижанова А.Е.</p>
+        </footer>
+    </div>
+</body>
