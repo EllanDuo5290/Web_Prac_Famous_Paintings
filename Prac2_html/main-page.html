@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Самые известные картины за всю историю человечества</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0 auto;
+                background-color: #e5e0b9;
+                overflow: scroll;
+            }
+            .menu-container {
+                display: block;
+                margin: 0.3vw;
+                height: 3vw;
+                background-color: #37220c;
+            }
+
+            /*--------меню--------*/
+            .menu {
+                display: block;
+                width: 10%;
+                text-align: center;
+                line-height: 3vw;
+                font-size: 1.2vw;
+                float: right;
+                height: inherit;
+                border-color: #e5e0b9;
+                border-width: 0 1px;
+                border-style: solid;
+            }
+
+            .left {
+                float: left;
+                width: 18%;
+                color: #9d500c;
+                font-weight: bold;
+                border-width: 0;
+            }
+
+            .selected{
+                background-color: #9d500c;
+                
+            }
+
+            .menu a {
+                text-decoration: none;
+                font-size: inherit;
+                color: #e5e0b9;
+            }
+
+            /*--------три картины--------*/
+            .container {
+                display: block;
+                margin: auto;
+                overflow: hidden;
+                font-size: 0;
+            }
+
+            .arts {
+                max-width: 90.6vw;
+            }
+
+            .arts img{
+                display: inline-block;
+                margin: 0.1vw;
+                height: 15vw;
+                width: 25vw;
+                object-fit: cover;
+            }
+
+            .arts img[alt="Тайная-вечеря"] {
+                width: 40vw;
+            }
+
+            /*--------маленькие картинки--------*/
+            .miniarts {
+                max-width: 92vw;
+            }
+
+            .miniarts-container-mini {
+                display: inline-block;
+                margin: 0.5vw 3.2vw;
+                height: 9.3vw;
+                width: 12vw;
+                overflow: hidden;
+                text-align: center;
+                font-size: 1.1vw;
+            }
+
+            .miniarts-container-mini img {
+                display: block;
+                margin: auto;
+                overflow: hidden;
+                object-fit: cover;
+                border-radius: 100%;
+                width: 5vw;
+                height: 5vw;
+            }
+
+            .miniarts-container-mini h5 {
+                text-align: center;
+            }
+
+            .miniarts-container-mini input[type="button"] {
+                background: #37220c;
+                color: #e5e0b9;
+                border: solid thin #37220c;
+                border-radius: 5px;
+                padding: 0.3vw;
+                font-size: 1vw;
+                display: block;
+                margin: auto;
+                font-family: inherit;
+            }
+
+            /*--------нижний блок--------*/
+            .down{
+                max-width: 93.6vw;
+            }
+
+            .down-container-medium {
+                display: inline-block;
+                margin: 0 1vw;
+                overflow: hidden;
+                width: 28.2vw;
+            }
+
+            .down-container-mini {
+                display: block;
+                margin: 1vw;
+                overflow: hidden;
+            }
+            .down-container-mini h4 {
+                font-size: 1.1vw;
+                text-align: right;
+                margin: 0.7vw 0;
+            }
+
+            .down-container-mini a {
+                display: block;
+                color: #9d500c;
+                text-align: right;
+                font-size: 1vw;
+            }
+
+            .down-container-mini p {
+                text-align: justify;
+                text-indent: 7%;
+                font-size: 1vw;
+            }
+
+            .down-container-mini img{
+                height: 8vw;
+                width: 8vw;
+                object-fit: cover;
+                float: right;
+                margin: 0.5vw 0 0 1vw;
+            }
+
+            .left-down img{
+                float: left;
+                margin: 0.5vw 1vw 0 0;
+            }
+            
+            .left-down h4{
+                text-align: left;
+            }
+            
+            .left-down a{
+                text-align: left;
+            }
+
+            .center-down h4{
+                text-align: center;
+            }
+
+            footer {
+                    margin: 2vw;
+                    font-size: 1vw;
+                    color: #37220c;
+            }
+
+            hr {
+                width: 97%;
+                margin: 1vw auto;
+                border: 0.05vw solid #37220c;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="main-page">
+            <div class="menu-container">
+                <div class="menu left">Самые известные картины</div>
+                <div class="menu">
+                    <a href="#">Таблица</a>
+                </div>
+                <div class="menu">
+                    <a href="#">Описание</a>
+                </div>
+                <div class="menu selected">
+                    <a href="#">Главная</a>
+                </div>
+            </div>
+
+            <main>
+                <div class="container arts">
+                    <img src="images/Utro_v_sosnovom_lecu.jpg" alt="Утро-в-сосновом-лесу">
+                    <img src="images/Tainaya_vecherya.jpeg" alt="Тайная-вечеря">
+                    <img src="images/Zvezdnaya_noch.jpg" alt="Звездная-ночь">
+                </div>
+                <div class="container miniarts">
+                    <div class="miniarts-container-mini">
+                        <img src="images/Utro_v_sosnovom_lecu.jpg" alt="Утро-в-сосновом-лесу">
+                        <h5>Утро в сосновом лесу</h5>
+                        <p>Шишкин И.|Савицкий К.</p>
+                        <input type="button" value="Подробнее">
+                    </div>
+                    <div class="miniarts-container-mini">
+                        <img src="images/Tainaya_vecherya.jpeg" alt="Тайная-вечеря">
+                        <h5>Тайная вечере</h5>
+                        <p>Леонардо да Винчи</p>
+                        <input type="button" value="Подробнее">
+                    </div>
+                    <div class="miniarts-container-mini">
+                        <img src="images/Zvezdnaya_noch.jpg" alt="Звездная-ночь">
+                        <h5>Звездная ночь</h5>
+                        <p>Винсент Ван Гог</p>
+                        <input type="button" value="Подробнее">
+                    </div>
+                    <div class="miniarts-container-mini">
+                        <img src="images/Krik.jpeg" alt="Крик">
+                        <h5>Крик</h5>
+                        <p>Эдвард Мунк</p>
+                        <input type="button" value="Подробнее">
+                    </div>
+                    <div class="miniarts-container-mini">
+                        <img src="images/Dama-s-gornostaem.jpg" alt="Дама-с-горностаем">
+                        <h5>Дама с горностаем</h5>
+                        <p>Леонардо да Винчи</p>
+                        <input type="button" value="Подробнее">
+                    </div>
+                </div>
+                <div class="container down">
+                    <div class="down-container-medium">
+                        <div class="down-container-mini">
+                            <img src="images/Mona_Lisa.jpeg" alt="Мона-Лиза">
+                            <h4>Мона Лиза</h4>
+                            <p>Специально для «Моны Лизы» Леонардо разработал особую технику сфумато, которая создает мягкие тени и плавные переходы.</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="down-container-mini">
+                            <img src="images/Dama-s-gornostaem.jpg" alt="Дама-с-горностаем">
+                            <h4>Дама с горностаем</h4>
+                            <p>По мнению многих исследователей, это портрет Чечилии Галлерани — любовницы Лодовико Сфорца, герцога Миланского</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="down-container-mini">
+                            <img src="images/Krik.jpeg" alt="Крик">
+                            <h4>Крик</h4>
+                            <p>Крик Мунк написал страдая заболеванием отсечения сетчатки глаза. Волнообразные линии есть результат видения мира с заболеванием.</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="down-container-medium">
+                        <div class="down-container-mini left-down">
+                            <img src="images/Utro_v_sosnovom_lecu.jpg" alt="Утро-в-сосновом-лесу">
+                            <h4>Утро в сосновом лесу</h4>
+                            <p>Одно из наиболее популярных полотен Шишкина, один из самых известных пейзажей в истории русского искусства.</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="down-container-mini center-down">
+                            <h4>Интересный факт</h4>
+                            <p>Одна дама приобрела на рынке всего за 10 рублей совершенно бездарную картину с подписью «И.Репин». Когда ценительница живописи показала 
+                                эту работу Илье Ефимовичу, он рассмеялся и дописал «Это не Репин».
+                            </p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="down-container-mini">
+                            <img src="images/Zvezdnaya_noch.jpg" alt="Звездная-ночь">
+                            <h4>Звездная ночь</h4>
+                            <p>Представляет вид из восточного окна спальни Ван Гога в Сен-Реми-де-Прованс на предрассветное небо и вымышленную деревню.</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="down-container-medium">
+                        <div class="down-container-mini center-down">
+                            <h4>Интересный факт</h4>
+                            <p>В 1893 году, за 20 лет до Малевича, Альфонс Алле, французский писатель-юморист, нарисовал свой «черный квадрат». Правда, 
+                                называлась картина Алле «Битва чернокожих в глубокой пещере тёмной ночью».
+                            </p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="down-container-mini">
+                            <img src="images/Tainaya_vecherya.jpeg" alt="Тайная-вечере">
+                            <h4>Тайная вечере</h4>
+                            <p>Ранее ошибочно называлась «фреской», но было установлено: роспись выполнена яичной темперой по масляному грунту из свинцовых белил.</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="down-container-mini left-down">
+                            <img src="images/Devushka_s_zhemchuzhnoi_serezhkoi.jpg" alt="Девушка-с-жемчужной-сережкой">
+                            <h4>Девушка с жемчужной серёжкой</h4>
+                            <p>Всего у художника было 15 детей, а на картине, предположительно, может быть изображена старшая из них — Мария.</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <hr>
+            <footer>
+                <p>
+                    Б9124-09.03.04 (4 пг)<br>
+                    Бижанова Алина<br>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
